@@ -2,7 +2,7 @@ package ds.assignment2.shoppingbackend.repositories;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.repository.CrudRepository;
+
 
 import ds.assignment2.shoppingbackend.models.User;
 

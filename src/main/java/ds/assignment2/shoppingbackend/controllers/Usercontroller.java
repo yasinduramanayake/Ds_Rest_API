@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import ds.assignment2.shoppingbackend.models.Product;
+
 import ds.assignment2.shoppingbackend.models.User;
 import ds.assignment2.shoppingbackend.repositories.UserRepository;
 
 @RestController
-public class Usercontroller {
+public class UserController {
 
 	@Autowired
 	UserRepository userRepository;
@@ -77,8 +77,8 @@ public class Usercontroller {
 	           res.setEmail(user.getEmail());
 	        if (user.getPassword() != null)
 	            res.setPassword(user.getPassword());
-	        if (user.getGender() != null)
-	            res.setGender(user.getGender());
+	        if (user.getMobile() != null)
+	            res.setMobile(user.getMobile());
 	        userRepository.save(res);
 	        return res;
 	    }
